@@ -14,6 +14,7 @@
 		0B6C591E26C98DD3002317BF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B6C591C26C98DD3002317BF /* LaunchScreen.storyboard */; };
 		0B6C592826C9934C002317BF /* BasicCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B6C592726C9934C002317BF /* BasicCell.swift */; };
 		0B6C592A26C9A1B7002317BF /* SettingsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B6C592926C9A1B7002317BF /* SettingsCell.swift */; };
+		0B6C592C26C9A4A0002317BF /* SwitchSettingsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B6C592B26C9A4A0002317BF /* SwitchSettingsCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		0B6C591F26C98DD3002317BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0B6C592726C9934C002317BF /* BasicCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicCell.swift; sourceTree = "<group>"; };
 		0B6C592926C9A1B7002317BF /* SettingsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsCell.swift; sourceTree = "<group>"; };
+		0B6C592B26C9A4A0002317BF /* SwitchSettingsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchSettingsCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 				0B6C591326C98DD0002317BF /* SceneDelegate.swift */,
 				0B6C591526C98DD0002317BF /* ViewController.swift */,
 				0B6C592926C9A1B7002317BF /* SettingsCell.swift */,
+				0B6C592B26C9A4A0002317BF /* SwitchSettingsCell.swift */,
 				0B6C592726C9934C002317BF /* BasicCell.swift */,
 				0B6C591A26C98DD3002317BF /* Assets.xcassets */,
 				0B6C591C26C98DD3002317BF /* LaunchScreen.storyboard */,
@@ -143,6 +146,7 @@
 				0B6C591626C98DD0002317BF /* ViewController.swift in Sources */,
 				0B6C591226C98DD0002317BF /* AppDelegate.swift in Sources */,
 				0B6C591426C98DD0002317BF /* SceneDelegate.swift in Sources */,
+				0B6C592C26C9A4A0002317BF /* SwitchSettingsCell.swift in Sources */,
 				0B6C592A26C9A1B7002317BF /* SettingsCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

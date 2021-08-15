@@ -16,6 +16,7 @@
 		0B6C592A26C9A1B7002317BF /* SettingsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B6C592926C9A1B7002317BF /* SettingsCell.swift */; };
 		0B6C592C26C9A4A0002317BF /* SwitchSettingsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B6C592B26C9A4A0002317BF /* SwitchSettingsCell.swift */; };
 		0B6C592E26C9A558002317BF /* WarningSettingsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B6C592D26C9A558002317BF /* WarningSettingsCell.swift */; };
+		0B6C593026C9A60E002317BF /* StatusSettingsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B6C592F26C9A60E002317BF /* StatusSettingsCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		0B6C592926C9A1B7002317BF /* SettingsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsCell.swift; sourceTree = "<group>"; };
 		0B6C592B26C9A4A0002317BF /* SwitchSettingsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchSettingsCell.swift; sourceTree = "<group>"; };
 		0B6C592D26C9A558002317BF /* WarningSettingsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WarningSettingsCell.swift; sourceTree = "<group>"; };
+		0B6C592F26C9A60E002317BF /* StatusSettingsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusSettingsCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				0B6C591326C98DD0002317BF /* SceneDelegate.swift */,
 				0B6C591526C98DD0002317BF /* ViewController.swift */,
 				0B6C592926C9A1B7002317BF /* SettingsCell.swift */,
+				0B6C592F26C9A60E002317BF /* StatusSettingsCell.swift */,
 				0B6C592D26C9A558002317BF /* WarningSettingsCell.swift */,
 				0B6C592B26C9A4A0002317BF /* SwitchSettingsCell.swift */,
 				0B6C592726C9934C002317BF /* BasicCell.swift */,
@@ -145,6 +148,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B6C593026C9A60E002317BF /* StatusSettingsCell.swift in Sources */,
 				0B6C592826C9934C002317BF /* BasicCell.swift in Sources */,
 				0B6C592E26C9A558002317BF /* WarningSettingsCell.swift in Sources */,
 				0B6C591626C98DD0002317BF /* ViewController.swift in Sources */,

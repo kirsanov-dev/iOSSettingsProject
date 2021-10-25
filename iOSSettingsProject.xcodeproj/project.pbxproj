@@ -17,6 +17,8 @@
 		0B6C592C26C9A4A0002317BF /* SwitchSettingsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B6C592B26C9A4A0002317BF /* SwitchSettingsCell.swift */; };
 		0B6C592E26C9A558002317BF /* WarningSettingsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B6C592D26C9A558002317BF /* WarningSettingsCell.swift */; };
 		0B6C593026C9A60E002317BF /* StatusSettingsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B6C592F26C9A60E002317BF /* StatusSettingsCell.swift */; };
+		0BD14686272724C000573619 /* SettingsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD14685272724C000573619 /* SettingsModel.swift */; };
+		0BD14688272724D400573619 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD14687272724D400573619 /* Settings.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		0B6C592B26C9A4A0002317BF /* SwitchSettingsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchSettingsCell.swift; sourceTree = "<group>"; };
 		0B6C592D26C9A558002317BF /* WarningSettingsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WarningSettingsCell.swift; sourceTree = "<group>"; };
 		0B6C592F26C9A60E002317BF /* StatusSettingsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusSettingsCell.swift; sourceTree = "<group>"; };
+		0BD14685272724C000573619 /* SettingsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsModel.swift; sourceTree = "<group>"; };
+		0BD14687272724D400573619 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,19 +68,109 @@
 		0B6C591026C98DD0002317BF /* iOSSettingsProject */ = {
 			isa = PBXGroup;
 			children = (
-				0B6C591126C98DD0002317BF /* AppDelegate.swift */,
-				0B6C591326C98DD0002317BF /* SceneDelegate.swift */,
-				0B6C591526C98DD0002317BF /* ViewController.swift */,
-				0B6C592926C9A1B7002317BF /* SettingsCell.swift */,
-				0B6C592F26C9A60E002317BF /* StatusSettingsCell.swift */,
-				0B6C592D26C9A558002317BF /* WarningSettingsCell.swift */,
-				0B6C592B26C9A4A0002317BF /* SwitchSettingsCell.swift */,
-				0B6C592726C9934C002317BF /* BasicCell.swift */,
+				0BD1467D272723D000573619 /* Sources */,
+				0BD1467E272723D600573619 /* Resources */,
+			);
+			path = iOSSettingsProject;
+			sourceTree = "<group>";
+		};
+		0BD1467D272723D000573619 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				0BD1467F2727242E00573619 /* App */,
+				0BD146812727244000573619 /* Scenes */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		0BD1467E272723D600573619 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				0B6C591A26C98DD3002317BF /* Assets.xcassets */,
 				0B6C591C26C98DD3002317BF /* LaunchScreen.storyboard */,
 				0B6C591F26C98DD3002317BF /* Info.plist */,
 			);
-			path = iOSSettingsProject;
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		0BD1467F2727242E00573619 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				0B6C591126C98DD0002317BF /* AppDelegate.swift */,
+				0B6C591326C98DD0002317BF /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		0BD146812727244000573619 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				0BD146822727246D00573619 /* Model */,
+				0BD146832727247300573619 /* View */,
+				0BD146842727247B00573619 /* Controller */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		0BD146822727246D00573619 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0BD14685272724C000573619 /* SettingsModel.swift */,
+				0BD14687272724D400573619 /* Settings.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0BD146832727247300573619 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0BD1468927272B0A00573619 /* Basic */,
+				0BD1468F27272B5C00573619 /* Switch */,
+				0BD1468C27272B3E00573619 /* Warning */,
+				0BD1468B27272B3500573619 /* Status */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0BD146842727247B00573619 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0B6C591526C98DD0002317BF /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		0BD1468927272B0A00573619 /* Basic */ = {
+			isa = PBXGroup;
+			children = (
+				0B6C592726C9934C002317BF /* BasicCell.swift */,
+				0B6C592926C9A1B7002317BF /* SettingsCell.swift */,
+			);
+			path = Basic;
+			sourceTree = "<group>";
+		};
+		0BD1468B27272B3500573619 /* Status */ = {
+			isa = PBXGroup;
+			children = (
+				0B6C592F26C9A60E002317BF /* StatusSettingsCell.swift */,
+			);
+			path = Status;
+			sourceTree = "<group>";
+		};
+		0BD1468C27272B3E00573619 /* Warning */ = {
+			isa = PBXGroup;
+			children = (
+				0B6C592D26C9A558002317BF /* WarningSettingsCell.swift */,
+			);
+			path = Warning;
+			sourceTree = "<group>";
+		};
+		0BD1468F27272B5C00573619 /* Switch */ = {
+			isa = PBXGroup;
+			children = (
+				0B6C592B26C9A4A0002317BF /* SwitchSettingsCell.swift */,
+			);
+			path = Switch;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,9 +242,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0BD14686272724C000573619 /* SettingsModel.swift in Sources */,
 				0B6C593026C9A60E002317BF /* StatusSettingsCell.swift in Sources */,
 				0B6C592826C9934C002317BF /* BasicCell.swift in Sources */,
 				0B6C592E26C9A558002317BF /* WarningSettingsCell.swift in Sources */,
+				0BD14688272724D400573619 /* Settings.swift in Sources */,
 				0B6C591626C98DD0002317BF /* ViewController.swift in Sources */,
 				0B6C591226C98DD0002317BF /* AppDelegate.swift in Sources */,
 				0B6C591426C98DD0002317BF /* SceneDelegate.swift in Sources */,

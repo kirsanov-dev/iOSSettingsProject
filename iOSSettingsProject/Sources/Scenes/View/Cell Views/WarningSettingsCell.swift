@@ -7,15 +7,6 @@
 
 import UIKit
 
-struct SettingsWarningOption {
-    let title: String
-    let icon: UIImage?
-    let iconBackgroundColor: UIColor
-    var warningNumber: String
-    let warningBackgroundColor: UIColor
-    let handler: (() -> Void)
-}
-
 class WarningSettingsCell: BasicCell {
 
     static let reuseIdentifier = "WarningSettingsCell"

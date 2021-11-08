@@ -7,8 +7,6 @@
 
 import UIKit
 
-
-
 class StatusSettingsCell: BasicCell {
 
     static let reuseIdentifier = "StatusSettingsCell"

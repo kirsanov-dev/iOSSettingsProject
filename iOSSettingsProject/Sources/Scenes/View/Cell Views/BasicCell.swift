@@ -9,26 +9,6 @@ import UIKit
 
 class BasicCell: UITableViewCell {
     
-    // MARK: - Enums
-    
-    enum Cell {
-        // all cells
-        static let iconContainerDeprecator: CGFloat = 12
-        static let cornerRadius: CGFloat = 8
-        static let iconContainerLeftIndent: CGFloat = 25
-        static let iconSizeMultiplier: CGFloat = 0.55
-        static let labelLeftIndent: CGFloat = 15
-        static let containerCornerRadius: CGFloat = 8
-        // switch cell
-        static let switchRightIndent: CGFloat = -22
-        // warning cell
-        static let warningFontSize: CGFloat = 14
-        static let warningContainerDeprecator: CGFloat = 22
-        static let warningContainerRightIndent: CGFloat = -20
-        // status cell
-        static let statusRightIndent: CGFloat = -15
-    }
-    
     // MARK: - Views
     
     let iconContainer: UIView = {
@@ -77,4 +57,25 @@ class BasicCell: UITableViewCell {
         label.centerYAnchor.constraint(equalTo: contentView.centerYAnchor).isActive = true
         label.leftAnchor.constraint(equalTo: iconContainer.rightAnchor, constant: Cell.labelLeftIndent).isActive = true
     }
+    
+    // MARK: - View Metrics
+    
+    enum Cell {
+        // all cells
+        static let iconContainerDeprecator: CGFloat = 12
+        static let cornerRadius: CGFloat = 8
+        static let iconContainerLeftIndent: CGFloat = 25
+        static let iconSizeMultiplier: CGFloat = 0.55
+        static let labelLeftIndent: CGFloat = 15
+        static let containerCornerRadius: CGFloat = 8
+        // switch cell
+        static let switchRightIndent: CGFloat = -22
+        // warning cell
+        static let warningFontSize: CGFloat = 14
+        static let warningContainerDeprecator: CGFloat = 22
+        static let warningContainerRightIndent: CGFloat = -20
+        // status cell
+        static let statusRightIndent: CGFloat = -15
+    }
+    
 }

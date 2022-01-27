@@ -47,14 +47,6 @@ class StatusSettingsCell: BasicCell {
         status.rightAnchor.constraint(equalTo: contentView.rightAnchor, constant: Cell.statusRightIndent).isActive = true
         status.centerYAnchor.constraint(equalTo: contentView.centerYAnchor).isActive = true
     }
-
-    override func prepareForReuse() {
-        super.prepareForReuse()
-        iconImage.image = nil
-        label.text = nil
-        iconContainer.backgroundColor = nil
-        status.text = nil
-    }
     
     public func configure(with model: SettingsStatusOption) {
         label.text = model.title

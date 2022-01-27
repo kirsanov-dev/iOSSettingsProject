@@ -19,9 +19,8 @@ enum SettingsOptionType {
     case statusCell(model: SettingsStatusOption)
 }
 
-final class SettingsModel {
-    
-    func createModels() -> [Section] {
+extension Section {
+    static func createModels() -> [Section] {
         return [
             Section(options: [
                 .switchCell(model: SettingsSwitchOption(title: "Авиарежим", icon: UIImage(systemName: "airplane"), iconBackgroundColor: UIColor.systemOrange, isOn: false){

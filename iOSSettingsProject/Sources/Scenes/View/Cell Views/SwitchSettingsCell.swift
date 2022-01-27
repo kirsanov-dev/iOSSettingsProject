@@ -46,14 +46,6 @@ class SwitchSettingsCell: BasicCell {
         cellSwitch.centerYAnchor.constraint(equalTo: contentView.centerYAnchor).isActive = true
         cellSwitch.rightAnchor.constraint(equalTo: contentView.rightAnchor, constant: -22).isActive = true
     }
-
-    override func prepareForReuse() {
-        super.prepareForReuse()
-        iconImage.image = nil
-        label.text = nil
-        iconContainer.backgroundColor = nil
-        cellSwitch.isOn = false
-    }
     
     public func configure(with model: SettingsSwitchOption) {
         label.text = model.title

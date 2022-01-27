@@ -67,14 +67,6 @@ class WarningSettingsCell: BasicCell {
         warning.centerXAnchor.constraint(equalTo: warningContainer.centerXAnchor).isActive = true
         warning.centerYAnchor.constraint(equalTo: warningContainer.centerYAnchor).isActive = true
     }
-
-    override func prepareForReuse() {
-        super.prepareForReuse()
-        iconImage.image = nil
-        label.text = nil
-        iconContainer.backgroundColor = nil
-        warning.text = nil
-    }
     
     public func configure(with model: SettingsWarningOption) {
         label.text = model.title

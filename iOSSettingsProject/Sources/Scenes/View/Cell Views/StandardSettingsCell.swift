@@ -37,13 +37,6 @@ class StandardSettingsCell: BasicCell {
         super.setupLayout()
     }
 
-    override func prepareForReuse() {
-        super.prepareForReuse()
-        iconImage.image = nil
-        label.text = nil
-        iconContainer.backgroundColor = nil
-    }
-
     public func configure(with model: SettingsOption) {
         label.text = model.title
         iconImage.image = model.icon
